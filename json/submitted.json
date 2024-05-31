@@ -1,0 +1,49 @@
+{
+    "submittedTopics":[
+    {
+      "sn": "1",
+      "id": "SCI-18-CSC-092",
+      "name": "Mohammed Abdulrazaq",
+      "topic": "Indices",
+      "level": 5,
+      "status": "Pending",
+      "class": "Year 7"
+    },
+    {
+      "sn": "2",
+      "id": "SCI-18-CSC-093",
+      "name": "Mohammed Ali",
+      "topic": "Surd",
+      "level": 3,
+      "status": "Approved",
+      "class": "Year 8"
+    },
+    {
+      "sn": "3",
+      "id": "SCI-18-CSC-094",
+      "name": "Mohammed Abdulrazaq",
+      "topic": "Organic chem",
+      "level": 5,
+      "status": "Pending",
+      "class": "Year 9"
+    },
+    {
+      "sn": "4",
+      "id": "SCI-18-CSC-092",
+      "name": "Ola Dimeji",
+      "topic": "Part of speech",
+      "level": 4,
+      "status": "Rejected",
+      "class": "Year 10"
+    },
+    {
+      "sn": "5",
+      "id": "SCI-18-CSC-091",
+      "name": "Zacks Zacks",
+      "topic": "Concord",
+      "level": 1,
+      "status": "Pending",
+      "class": "Year 11"
+    }
+    ]
+}

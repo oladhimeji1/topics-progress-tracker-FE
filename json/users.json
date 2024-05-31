@@ -1,0 +1,22 @@
+{
+    "users":[
+        {
+        "sn": "1",
+        "id": "SCI-18-CSC-092",
+        "name": "Mohammed Abdulrazaq",
+        "accessibility": "Unlimited",
+        "psw": "00000",
+        "status": "Pending",
+        "class": ["All"]
+        },
+        {
+        "sn": "2",
+        "id": "SCI-18-CSC-093",
+        "name": "Oladimeji Abdulrazaq",
+        "accessibility": "Limited",
+        "psw": "1234",
+        "status": "Pending",
+        "class": ["Year 7", "Year 8"]
+        }
+    ]
+}

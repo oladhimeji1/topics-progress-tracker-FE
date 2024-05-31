@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="opacity-0" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="Oladimeji Abdulrazaq">
+    <meta name="author" content="Oladimeji Abdulrazaq">
+    <link rel="shortcut icon" href="./img/school-logo2-1.png" type="image/x-icon">
+    <title>Dashboard </title>
+    
+    <link rel="stylesheet" href="../dist/css/vendors/tippy.css">
+    <link rel="stylesheet" href="../dist/css/vendors/litepicker.css">
+    <link rel="stylesheet" href="../dist/css/vendors/tiny-slider.css">
+    <link rel="stylesheet" href="../dist/css/themes/rubick/side-nav.css">
+    <link rel="stylesheet" href="../dist/css/vendors/leaflet.css">
+    <link rel="stylesheet" href="../dist/css/vendors/simplebar.css">
+    <link rel="stylesheet" href="../dist/css/components/mobile-menu.css">
+    <link rel="stylesheet" href="../dist/css/app.css">
+    <link rel="stylesheet" href="../css/stlye.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    
+    <div class="rubick px-5 sm:px-8 py-5 before:content-[''] before:bg-gradient-to-b before:from-theme-1 before:to-theme-2 dark:before:from-darkmode-800 dark:before:to-darkmode-800 before:fixed before:inset-0 before:z-[-1]">
+        <!-- BEGIN: Mobile Menu -->
+        <div class="mobile-menu group top-0 inset-x-0 fixed bg-theme-1/90 z-[60] border-b border-white/[0.08] dark:bg-darkmode-800/90 md:hidden before:content-[''] before:w-full before:h-screen before:z-10 before:fixed before:inset-x-0 before:bg-black/90 before:transition-opacity before:duration-200 before:ease-in-out before:invisible before:opacity-0 [&.mobile-menu--active]:before:visible [&.mobile-menu--active]:before:opacity-100">
+            <div class="flex h-[70px] items-center px-3 sm:px-8">
+                <a class="mr-auto flex" href="">
+                    <img class="w-6" src="../dist/images/logo.svg" alt="Midone - Tailwind Admin Dashboard Template">
+                </a>
+                <a class="mobile-menu-toggler" href="#">
+                    <i data-tw-merge="" data-lucide="bar-chart2" class="stroke-1.5 h-8 w-8 -rotate-90 transform text-white"></i>
+                </a>
+            </div>
+            <div class="scrollable h-screen z-20 top-0 left-0 w-[270px] -ml-[100%] bg-primary transition-all duration-300 ease-in-out dark:bg-darkmode-800 [&[data-simplebar]]:fixed [&_.simplebar-scrollbar]:before:bg-black/50 group-[.mobile-menu--active]:ml-0">
+                <a href="#" class="fixed top-0 right-0 mt-4 mr-4 transition-opacity duration-200 ease-in-out invisible opacity-0 group-[.mobile-menu--active]:visible group-[.mobile-menu--active]:opacity-100">
+                    <i data-tw-merge="" data-lucide="x-circle" class="stroke-1.5 mobile-menu-toggler h-8 w-8 -rotate-90 transform text-white"></i>
+                </a>
+                <ul class="py-2">
+                    <!-- BEGIN: First Child -->
+                    <li>
+                        <a class="menu menu--active" href="rubick-side-menu-dashboard-overview-1-page.html">
+                            <div class="menu__icon">
+                                <i data-tw-merge="" data-lucide="home" class="stroke-1.5 w-5 h-5"></i>
+                            </div>
+                            <div class="menu__title">
+                                Dashboard
+                                <div class="menu__sub-icon transform rotate-180">
+                                    <i data-tw-merge="" data-lucide="chevron-down" class="stroke-1.5 w-5 h-5"></i>
+                                </div>
+                            </div>
+                        </a>
+                       </li>
+                    <li>
+                        <a class="menu menu--active" href="rubick-side-menu-dashboard-overview-1-page.html">
+                            <div class="menu__icon">
+                                <i data-tw-merge="" data-lucide="home" class="stroke-1.5 w-5 h-5"></i>
+                            </div>
+                            <div class="menu__title">
+                                Dashboard
+                                <div class="menu__sub-icon transform rotate-180">
+                                    <i data-tw-merge="" data-lucide="chevron-down" class="stroke-1.5 w-5 h-5"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <!-- END: First Child -->
+                </ul>
+            </div>
+        </div>
+        <!-- END: Mobile Menu -->
+        
+        <div class="mt-[4.7rem] flex md:mt-0">
+            <!-- BEGIN: Side Menu -->
+            <nav class="side-nav hidden w-[80px] overflow-x-hidden pb-16 pr-5 md:block xl:w-[230px]">
+                <a class="flex items-center pt-4 pl-5 intro-x" href="">
+                    <img class="w-6" src="../dist/images/logo.svg" alt="Midone - Tailwind Admin Dashboard Template">
+                    <span class="hidden ml-3 text-lg text-white xl:block"> Rubick </span>
+                </a>
+                <div class="my-6 side-nav__divider"></div>
+                <ul>
+                    <li>
+                        <a href="/home" class="side-menu">
+                            <div class="side-menu__icon">
+                                <i data-tw-merge="" data-lucide="home" class="stroke-1.5 w-5 h-5"></i>
+                            </div>
+                            <div class="side-menu__title">
+                                Dashboard
+                            </div>
+                        </a>
+                    </li>
+                    <!-- <li>
+                        <a href="/profile-setting.html" class="side-menu side-menu--active">
+                            <div class="side-menu__icon">
+                                <i data-tw-merge="" data-lucide="settings" class="stroke-1.5 w-5 h-5"></i>
+                            </div>
+                            <div class="side-menu__title">
+                                Settings
+                            </div>
+                        </a>
+                    </li> -->
+                    <li>
+                        <a href="javascript:;" class="side-menu side-menu--active">
+                            <div class="side-menu__icon">
+                                <i data-tw-merge="" data-lucide="settings" class="stroke-1.5 w-5 h-5"></i>
+                            </div>
+                            <div class="side-menu__title">
+                                Settings
+                                <div class="side-menu__sub-icon ">
+                                    <i data-tw-merge="" data-lucide="chevron-down" class="stroke-1.5 w-5 h-5"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <ul class="">
+                            <li>
+                                <a href="/profile-setting" class="side-menu">
+                                    <div class="side-menu__icon">
+                                        <i data-tw-merge="" data-lucide="activity" class="stroke-1.5 w-5 h-5"></i>
+                                    </div>
+                                    <div class="side-menu__title">
+                                        Users
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../subject-setting" class="side-menu">
+                                    <div class="side-menu__icon">
+                                        <i data-tw-merge="" data-lucide="activity" class="stroke-1.5 w-5 h-5"></i>
+                                    </div>
+                                    <div class="side-menu__title">
+                                        Subjects
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <!-- END: Side Menu -->
+            <!-- BEGIN: Content -->
+            <div class="md:max-w-auto min-h-screen min-w-0 max-w-full flex-1 rounded-[30px] bg-slate-100 px-4 pb-10 before:block before:h-px before:w-full before:content-[''] dark:bg-darkmode-700 md:px-[22px]">
+                <!-- BEGIN: Top Bar -->
+                <div class="relative z-[51] flex h-[67px] items-center border-b border-slate-200">
+                    <!-- BEGIN: Breadcrumb -->
+                    <nav aria-label="breadcrumb" class="flex -intro-x mr-auto hidden sm:flex">
+                        <ol class="flex items-center text-theme-1 dark:text-slate-300">
+                            <li class="">
+                                <a href="">Application</a>
+                            </li>
+                            <li class="relative ml-5 pl-0.5 before:content-[''] before:w-[14px] before:h-[14px] before:bg-chevron-black before:transform before:rotate-[-90deg] before:bg-[length:100%] before:-ml-[1.125rem] before:absolute before:my-auto before:inset-y-0 dark:before:bg-chevron-white text-slate-800 cursor-text dark:text-slate-400">
+                                <a href="">Profile</a>
+                            </li>
+                        </ol>
+                    </nav>
+                    <!-- END: Breadcrumb -->
+                    
+                    <!-- BEGIN: Account Menu -->
+                    <div data-tw-merge="" data-tw-placement="bottom-end" class="dropdown relative">
+                        <button data-tw-toggle="dropdown" aria-expanded="false" class="cursor-pointer  block h-8 w-8 overflow-hidden rounded-full shadow-lg">
+                            <div class="side-menu__icon">
+                                <i data-tw-merge="" data-lucide="user" class=" w-5 h-5"></i>
+                            </div>
+                        </button>
+                        <div data-transition="" data-selector=".show" data-enter="transition-all ease-linear duration-150" data-enter-from="absolute !mt-5 invisible opacity-0 translate-y-1" data-enter-to="!mt-1 visible opacity-100 translate-y-0" data-leave="transition-all ease-linear duration-150" data-leave-from="!mt-1 visible opacity-100 translate-y-0" data-leave-to="absolute !mt-5 invisible opacity-0 translate-y-1" class="dropdown-menu absolute z-[9999] hidden">
+                            <div data-tw-merge="" class="dropdown-content rounded-md border-transparent p-2 shadow-[0px_3px_10px_#00000017] dark:border-transparent dark:bg-darkmode-600 mt-px w-56 bg-theme-1 text-white">
+                                <div class="p-2 font-medium font-normal">
+                                    <div class="font-medium">Mohammed Abdulrazaq</div>
+                                    <div class="mt-0.5 text-xs text-white/70 dark:text-slate-500">
+                                        SCI-18-CSC-092
+                                    </div>
+                                </div>
+                                <div class="h-px my-2 -mx-2 bg-slate-200/60 dark:bg-darkmode-400 bg-white/[0.08]">
+                                </div>
+                                <a class="cursor-pointer flex items-center p-2 transition duration-300 ease-in-out rounded-md hover:bg-slate-200/60 dark:bg-darkmode-600 dark:hover:bg-darkmode-400 dropdown-item hover:bg-white/5"><i data-tw-merge="" data-lucide="toggle-right" class="stroke-1.5 mr-2 h-4 w-4"></i>
+                                    Logout</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END: Account Menu -->
+                </div>
+                <!-- END: Top Bar -->
+                <div class="col-span-12 2xl:col-span-3">
+                    <div class="-mb-10 pb-10 2xl:border-l">
+                        <div class="grid grid-cols-12 gap-x-6 gap-y-6 2xl:gap-x-0 2xl:pl-6">
+                            <!-- BEGIN: Teachers -->
+                            <div class="col-span-12 mt-3 md:col-span-6 xl:col-span-4 2xl:col-span-12 2xl:mt-8">
+                                <div class="intro-x flex h-10 items-center">
+                                    <h2 class="mr-5 truncate text-lg font-medium">Teachers</h2>
+                                </div>
+                                <div class="mt-5 overflow-y-auto bg-black" id="users-container" style="height: 70vh;">
+                                    
+                                </div>
+                            </div>
+                            <!-- END: Transactions -->
+                            
+                                <!-- BEGIN: Vertical Form -->
+                            <div class="intro-y col-span-12 lg:col-span-6 my-10">
+                                <div class="intro-x flex h-10 items-center">
+                                    <h2 class="mr-5 truncate text-lg font-medium"></h2>
+                                </div>
+                                <div class="preview-component intro-y box">
+                                    <div class="flex flex-col items-center border-b border-slate-200/60 p-5 dark:border-darkmode-400 sm:flex-row">
+                                        <h2 class="mr-auto text-base font-medium">
+                                            Teachers Details
+                                        </h2>
+                                    </div>
+                                    <div class="p-5">
+                                        <div class="preview relative [&.hide]:overflow-hidden [&.hide]:h-0">
+                                            <div>
+                                                <label data-tw-merge="" for="vertical-form-1" class="inline-block mb-2 group-[.form-inline]:mb-2 group-[.form-inline]:sm:mb-0 group-[.form-inline]:sm:mr-5 group-[.form-inline]:sm:text-right">
+                                                    Name
+                                                </label>
+                                                <input data-tw-merge="" id="newuser-name" type="text" placeholder="Mohammed Abdulrazaq" class="disabled:bg-slate-100 disabled:cursor-not-allowed dark:disabled:bg-darkmode-800/50 dark:disabled:border-transparent [&[readonly]]:bg-slate-100 [&[readonly]]:cursor-not-allowed [&[readonly]]:dark:bg-darkmode-800/50 [&[readonly]]:dark:border-transparent transition duration-200 ease-in-out w-full text-sm border-slate-200 shadow-sm rounded-md placeholder:text-slate-400/90 focus:ring-4 focus:ring-primary focus:ring-opacity-20 focus:border-primary focus:border-opacity-40 dark:bg-darkmode-800 dark:border-transparent dark:focus:ring-slate-700 dark:focus:ring-opacity-50 dark:placeholder:text-slate-500/80 group-[.form-inline]:flex-1 group-[.input-group]:rounded-none group-[.input-group]:[&:not(:first-child)]:border-l-transparent group-[.input-group]:first:rounded-l group-[.input-group]:last:rounded-r group-[.input-group]:z-10">
+                                            </div>
+                                            <div class="mt-3">
+                                                <label data-tw-merge="" for="vertical-form-2" class="inline-block mb-2 group-[.form-inline]:mb-2 group-[.form-inline]:sm:mb-0 group-[.form-inline]:sm:mr-5 group-[.form-inline]:sm:text-right">
+                                                    ID
+                                                </label>
+                                                <input data-tw-merge="" id="newuser-id" type="text" placeholder="ID number" class="disabled:bg-slate-100 disabled:cursor-not-allowed dark:disabled:bg-darkmode-800/50 dark:disabled:border-transparent [&[readonly]]:bg-slate-100 [&[readonly]]:cursor-not-allowed [&[readonly]]:dark:bg-darkmode-800/50 [&[readonly]]:dark:border-transparent transition duration-200 ease-in-out w-full text-sm border-slate-200 shadow-sm rounded-md placeholder:text-slate-400/90 focus:ring-4 focus:ring-primary focus:ring-opacity-20 focus:border-primary focus:border-opacity-40 dark:bg-darkmode-800 dark:border-transparent dark:focus:ring-slate-700 dark:focus:ring-opacity-50 dark:placeholder:text-slate-500/80 group-[.form-inline]:flex-1 group-[.input-group]:rounded-none group-[.input-group]:[&:not(:first-child)]:border-l-transparent group-[.input-group]:first:rounded-l group-[.input-group]:last:rounded-r group-[.input-group]:z-10">
+                                            </div>
+                                            
+                                            <div class="mt-3">
+                                                <label data-tw-merge="" for="vertical-form-2" class="inline-block mb-2 group-[.form-inline]:mb-2 group-[.form-inline]:sm:mb-0 group-[.form-inline]:sm:mr-5 group-[.form-inline]:sm:text-right">
+                                                    Class
+                                                </label>
+                                                <input data-tw-merge="" id="newuser-class" type="text" placeholder="comma separated e.g. Year 7, Year 8, ..." class="disabled:bg-slate-100 disabled:cursor-not-allowed dark:disabled:bg-darkmode-800/50 dark:disabled:border-transparent [&[readonly]]:bg-slate-100 [&[readonly]]:cursor-not-allowed [&[readonly]]:dark:bg-darkmode-800/50 [&[readonly]]:dark:border-transparent transition duration-200 ease-in-out w-full text-sm border-slate-200 shadow-sm rounded-md placeholder:text-slate-400/90 focus:ring-4 focus:ring-primary focus:ring-opacity-20 focus:border-primary focus:border-opacity-40 dark:bg-darkmode-800 dark:border-transparent dark:focus:ring-slate-700 dark:focus:ring-opacity-50 dark:placeholder:text-slate-500/80 group-[.form-inline]:flex-1 group-[.input-group]:rounded-none group-[.input-group]:[&:not(:first-child)]:border-l-transparent group-[.input-group]:first:rounded-l group-[.input-group]:last:rounded-r group-[.input-group]:z-10">
+                                            </div>
+
+                                            <div class="mt-3">
+                                                <p id="output"></p>
+                                            </div>
+
+                                            <div class="mt-3">
+                                                <p id="gen-psw"></p>
+                                            </div>
+                            
+                                            <button id="newuser-btn" data-tw-merge="" class="transition duration-200 border shadow-sm inline-flex items-center justify-center py-2 px-3 rounded-md font-medium cursor-pointer focus:ring-4 focus:ring-primary focus:ring-opacity-20 focus-visible:outline-none dark:focus:ring-slate-700 dark:focus:ring-opacity-50 [&:hover:not(:disabled)]:bg-opacity-90 [&:hover:not(:disabled)]:border-opacity-90 [&:not(button)]:text-center disabled:opacity-70 disabled:cursor-not-allowed bg-primary border-primary text-white dark:border-primary mt-5">Submit</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END: Content -->
+        </div>
+    </div>
+
+    <!-- Loader -->
+    <section class="loader-cont">
+        <div class="loading loading02">
+          <span>N</span>
+          <span>G</span>
+          <span>A</span>
+        </div>
+    </section>
+
+    <!-- Toast -->
+    <section class="toast-cont">
+        <div class="toast ">
+          <p id="toast-p">Sucess</p>
+          <span id="toast-span">You have succefully submitted the topic</span>
+        </div>
+    </section>
+
+    <script>
+         var output = document.getElementById('output');
+        document.getElementById('vertical-form-1').addEventListener('keyup', () => {
+            output.innerHTML = document.getElementById('vertical-form-1').value;
+        })
+    </script>
+
+    <script src="../js/profile.js"></script>
+
+    <!-- BEGIN: Vendor JS Assets-->
+    <script src="../dist/js/vendors/dom.js"></script>
+    <script src="../dist/js/vendors/tailwind-merge.js"></script>
+    <script src="../dist/js/vendors/lucide.js"></script>
+    <script src="../dist/js/vendors/popper.js"></script>
+    <script src="../dist/js/vendors/dropdown.js"></script>
+    <script src="../dist/js/vendors/tippy.js"></script>
+    <script src="../dist/js/vendors/modal.js"></script>
+    <script src="../dist/js/vendors/transition.js"></script>
+    <script src="../dist/js/vendors/simplebar.js"></script>
+    <script src="../dist/js/components/base/theme-color.js"></script>
+    <script src="../dist/js/components/base/lucide.js"></script>
+    <script src="../dist/js/components/base/tippy.js"></script>
+    <script src="../dist/js/themes/rubick.js"></script>
+    <script src="../dist/js/components/mobile-menu.js"></script>
+    <script src="../dist/js/components/themes/rubick/top-bar.js"></script> <!-- END: Vendor JS Assets-->
+    <!-- BEGIN: Pages, layouts, components JS Assets-->
+    <!-- END: Pages, layouts, components JS Assets-->
+</body>
+</html>

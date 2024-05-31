@@ -1,0 +1,93 @@
+{
+  "classes": {
+    "Year 7": {
+      "subjects": {
+        "Mathematics": {
+          "firstTerm": [
+            {
+                "labels": ["Indices", "Surd", "Q E", "Q E", "Green", "Purple", "Orange", "Indices", "Surd", "Q E", "Q E", "Green", "Purple", "Orange"],
+                "chartData": [1, 1, 5, 3, 2, 4, 0, 1, 1, 5, 3, 2, 4, 5]
+            }
+          ],
+          "secondTerm": [
+            {
+                "labels": ["Razaq", "Surd", "Q E", "Q E", "Green", "Purple", "Orange", "Indices", "Surd", "Q E", "Q E", "Green", "Purple", "Orange"],
+                "chartData": [3, 1, 5, 3, 2, 4, 2, 3, 1, 5, 3, 2, 4, 5]
+            }
+          ],
+          "thirdTerm": [
+            {
+                "labels": ["Ola", "Surd", "Q E", "Q E", "Green", "Purple", "Orange", "Indices", "Surd", "Q E", "Q E", "Green", "Purple", "Orange"],
+                "chartData": [5, 1, 5, 3, 2, 4, 3, 1, 1, 5, 3, 2, 4, 5]
+            }
+          ]
+        },
+        "English": {
+          "firstTerm": [
+            {
+                "labels": ["Ola", "Surd", "Q E", "Q E", "Green", "Purple", "Orange", "Indices", "Surd", "Q E", "Q E", "Green", "Purple", "Orange"],
+                "chartData": [5, 1, 5, 3, 2, 4, 1, 2, 1, 5, 3, 2, 4, 5]
+            }
+          ],
+          "secondTerm": [
+            {
+                "labels": ["Ola", "Surd", "Q E", "Q E", "Green", "Purple", "Orange", "Indices", "Surd", "Q E", "Q E", "Green", "Purple", "Orange"],
+                "chartData": [5, 1, 5, 3, 2, 4, 5, 3, 1, 5, 3, 2, 4, 5]
+            }
+          ],
+          "thirdTerm": [
+            {
+                "labels": ["Ola", "Surd", "Q E", "Q E", "Green", "Purple", "Orange", "Indices", "Surd", "Q E", "Q E", "Green", "Purple", "Orange"],
+                "chartData": [5, 1, 5, 3, 2, 4, 2, 3, 1, 5, 3, 2, 4, 5]
+            }
+          ]
+        }
+      }
+    },
+    "Year 8": {
+      "subjects": {
+        "Mathematics": {
+          "firstTerm": [
+            {
+                "labels": ["first", "Surd", "Q E", "Q E", "Green", "Purple", "Orange", "Indices", "Surd", "Q E", "Q E", "Green", "Purple", "Orange"],
+                "chartData": [5, 1, 5, 3, 2, 4, 1, 3, 1, 5, 3, 2, 4, 5]
+            }
+          ],
+          "secondTerm": [
+            {
+                "labels": ["second", "Surd", "Q E", "Q E", "Green", "Purple", "Orange", "Indices", "Surd", "Q E", "Q E", "Green", "Purple", "Orange"],
+                "chartData": [5, 1, 5, 3, 2, 4, 2, 5, 1, 5, 3, 2, 4, 5]
+            }
+          ],
+          "thirdTerm": [
+            {
+                "labels": ["third", "Surd", "Q E", "Q E", "Green", "Purple", "Orange", "Indices", "Surd", "Q E", "Q E", "Green", "Purple", "Orange"],
+                "chartData": [5, 1, 5, 3, 2, 4, 5, 1, 1, 5, 3, 2, 4, 5]
+            }
+          ]
+        },
+        "Science": {
+          "firstTerm": [
+            {
+                "labels": ["scifirst", "Surd", "Q E", "Q E", "Green", "Purple", "Orange", "Indices", "Surd", "Q E", "Q E", "Green", "Purple", "Orange"],
+                "chartData": [5, 1, 5, 3, 2, 4, 2, 4, 1, 5, 3, 2, 4, 5]
+            }
+          ],
+          "secondTerm": [
+            {
+                "labels": ["Ola", "Surd", "Q E", "Q E", "Green", "Purple", "Orange", "Indices", "Surd", "Q E", "Q E", "Green", "Purple", "Orange"],
+                "chartData": [5, 1, 5, 3, 2, 4, 5, 2, 1, 5, 3, 2, 4, 5]
+            }
+          ],
+          "thirdTerm": [
+            {
+                "labels": ["Ola", "Surd", "Q E", "Q E", "Green", "Purple", "Orange", "Indices", "Surd", "Q E", "Q E", "Green", "Purple", "Orange"],
+                "chartData": [5, 1, 5, 3, 2, 4, 4, 3, 1, 5, 3, 2, 4, 5]
+            }
+          ]
+        }
+      }
+    }
+    
+  }
+}

@@ -1,0 +1,69 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'poppins';
+}
+.bg-container{
+    height: 100vh;
+    width: 100%;
+    background-image: url('../img/IMG_6626-scaled.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+
+h2{
+    text-align: center;
+    color: navy;
+}
+.login-container{
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: rgba(94, 94, 94, 0.205);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px 25px;
+}
+.login-container input, button{
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.267);
+    padding: 10px;
+    display: block;
+    margin: 15px 0;
+    color: navy;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+}
+.login-container input::placeholder{
+    color: navy;
+    font-family: 'poppins';
+}
+button{
+    margin-top: 25px;
+    color: white;
+    font-family: 'poppins';
+    cursor: pointer;
+}
+button:hover{
+    margin-top: 25px;
+    background-color: white;
+    font-family: 'poppins';
+    cursor: pointer;
+    color: navy
+}
+p{
+    color: white;
+}
+p a{
+    color: white;
+}
+p a:hover{
+    color: red;
+}
