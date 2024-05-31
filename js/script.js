@@ -89,7 +89,7 @@ $('#newuser-btn').on('click', () => {
         chartData: chartData
     };
 
-    fetch('http://localhost:3000/update-topics', {
+    fetch('https://topics-progress-tracker-be.onrender.com/update-topics', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -200,7 +200,7 @@ $('#newuser-btn').on('click', () => {
 
         if (subject != '') {
 
-            fetch('http://localhost:3000/get-topics', {
+            fetch('https://topics-progress-tracker-be.onrender.com/get-topics', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -238,7 +238,7 @@ $('#newuser-btn').on('click', () => {
         // console.log('year: ' + year, 'subject: ' + subject, 'term: ' + term, 'level: ' + newChartDataValue, 'Topic: ' + topicToFind);
         var topicIndex = topicToFind;
 
-        fetch('http://localhost:3000/update-chartData-index', {
+        fetch('https://topics-progress-tracker-be.onrender.com/update-chartData-index', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -275,7 +275,7 @@ function submitTopic(year, subject, term, newChartDataValue, topicToFind){
     var topic = topicToFind;
     var status = "Pending";
 
-    fetch('http://localhost:3000/submit-topic', {
+    fetch('https://topics-progress-tracker-be.onrender.com/submit-topic', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

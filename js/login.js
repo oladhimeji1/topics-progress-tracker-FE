@@ -25,7 +25,7 @@ $(document).ready(() => {
               window.location.reload()
             }, 3000);
         } else {
-            fetch('http://localhost:3000/login', {
+            fetch('https://topics-progress-tracker-be.onrender.com/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

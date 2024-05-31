@@ -42,7 +42,7 @@ $(document).ready(() => {
     } else {
       
       const arrayOfSubjects = $('#newuser-class').val().split(',').map(subject => subject.trim());
-      const url = 'http://localhost:3000/users';
+      const url = 'https://topics-progress-tracker-be.onrender.com/users';
       
       const _data = {
         "id": $('#newuser-id').val(),
@@ -83,7 +83,7 @@ $(document).ready(() => {
 })
 
 async function getUser(userId){
-  fetch(`http://localhost:3000/getUser/${userId}`)
+  fetch(`https://topics-progress-tracker-be.onrender.com/getUser/${userId}`)
   .then(response => {
       if (!response.ok) {
           throw new Error('Network response was not ok');
@@ -106,7 +106,7 @@ async function getUser(userId){
 async function getAllUsers() {
     try {
       // $('.loader-cont').fadeIn(300);
-      const response = await fetch('http://localhost:3000/users');
+      const response = await fetch('https://topics-progress-tracker-be.onrender.com/users');
       jsonData = await response.json();
   
       setTimeout(() => {

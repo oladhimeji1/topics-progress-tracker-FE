@@ -13,7 +13,7 @@ $(document).ready(() => {
 async function getClassTopicData(className, subjectName, termName) {
   try {
     // $('.loader-cont').fadeIn(300);
-    const response = await fetch('http://localhost:3000/topics');
+    const response = await fetch('https://topics-progress-tracker-be.onrender.com/topics');
     jsonData = await response.json();
     // console.log(jsonData)
     // $('.loader-cont').delay(1000);
@@ -191,7 +191,7 @@ function plotChart(labels, chartData, chartClass, chartTerm, subjectName){
 
 async function getSubmittedTopics() {
   try {
-    const response = await fetch('http://localhost:3000/submitted');
+    const response = await fetch('https://topics-progress-tracker-be.onrender.com/submitted');
     jsonData = await response.json();
 
     jsonData.submittedTopics.map(subject => {
@@ -251,7 +251,7 @@ function updateStatus(subject, action){
     if (action === 'approve') {
       subject.status = 'Approved'
 
-      fetch('http://localhost:3000/update-status', {
+      fetch('https://topics-progress-tracker-be.onrender.com/update-status', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -288,7 +288,7 @@ function updateStatus(subject, action){
     } else if (action === 'reject') {
       subject.status = 'Rejected'
       
-      fetch('http://localhost:3000/update-status', {
+      fetch('https://topics-progress-tracker-be.onrender.com/update-status', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
