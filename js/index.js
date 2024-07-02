@@ -4,16 +4,27 @@ $(document).ready(() => {
   if(!userdata){
     window.location.assign('/')
   }
-  $('#username').text(userdata.name + ` (${userdata.id})`)
+  $('#username').text(userdata.name + ` (${userdata.id})`);
+  
+  console.log(getTerm('get-term'));
+  // console.log(res)
+  // $('#currentTerm').text(data.currentTerm);
+    
+  //   $(`#current-term option[value='${data.currentTerm}']`).attr("selected", "selected");
 })
 
 
-  var jsonData;
+var jsonData;
+
+var url = 'http://localhost:3000/'
+var onlineUrl = 'https://topics-progress-tracker-be.onrender.com/'
+
   
 async function getClassTopicData(className, subjectName, termName) {
   try {
     // $('.loader-cont').fadeIn(300);
-    const response = await fetch('https://topics-progress-tracker-be.onrender.com/topics');
+    const response = await fetch(url + 'topics');
+    // const response = await fetch(url + 'topics');
     jsonData = await response.json();
     // console.log(jsonData)
     // $('.loader-cont').delay(1000);
@@ -146,6 +157,55 @@ $('#subjectSelect').change(function() {
   // console.log(subjectSelect.)
   getClassTopicData(selectedClass, subjectSelect, selectedTerm);
   // console.log(selectedClass, subjectSelect, selectedTerm)
+});
+
+$('#current-term').change(function(){
+  var a = $(this).val();
+  var currentTerm = {
+    currentTerm: $(this).val()
+  };
+
+  if (currentTerm != '') {
+
+    fetch(url + 'set-term', {
+          method: 'POST',
+          headers: {
+              'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(currentTerm)
+      })
+      .then(response => response.text())
+      .then(data => {
+        data = JSON.parse(data);
+        
+        $('.toast').css("border-left", "5px solid green");
+        $('.toast').css("color", "green");
+        $('#toast-p').text("Success!");
+        $('#toast-span').text(data.msg);
+        $('#currentTerm').text(data.term.currentTerm);
+
+        $('.toast-cont').fadeIn(500);
+        setTimeout(() => {
+          $('.toast-cont').fadeOut(500);
+          // window.location.reload()
+        }, 3000);
+      })
+      .catch(error => {
+          console.error('Error:', error);
+          $('.toast').css("border-left", "5px solid red");
+          $('.toast').css("color", "red");
+          $('#toast-p').text("Error!");
+          $('#toast-span').text(error);
+  
+          $('.toast-cont').fadeIn(500);
+          setTimeout(() => {
+            $('.toast-cont').fadeOut(500);
+            window.location.reload()
+          }, 5000);
+      });
+    // console.log('Approving subject:', subject, action);
+  }
+
 })
 
 
@@ -191,7 +251,7 @@ function plotChart(labels, chartData, chartClass, chartTerm, subjectName){
 
 async function getSubmittedTopics() {
   try {
-    const response = await fetch('https://topics-progress-tracker-be.onrender.com/submitted');
+    const response = await fetch(url + 'submitted');
     jsonData = await response.json();
 
     jsonData.submittedTopics.map(subject => {
@@ -251,7 +311,7 @@ function updateStatus(subject, action){
     if (action === 'approve') {
       subject.status = 'Approved'
 
-      fetch('https://topics-progress-tracker-be.onrender.com/update-status', {
+      fetch(url + 'update-status', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -288,7 +348,7 @@ function updateStatus(subject, action){
     } else if (action === 'reject') {
       subject.status = 'Rejected'
       
-      fetch('https://topics-progress-tracker-be.onrender.com/update-status', {
+      fetch(url + 'update-status', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -342,9 +402,35 @@ function checkConnection(){
       // window.location.reload()
     }, 5000);
   }
+}
+
+const getTerm = (endpoint) => {
  
+  fetch(url + endpoint)
+  .then(response => response.json())
+  .then(data => {
+    // console.log(data)
+    var da = {
+      res: data
+    }
+    return da;
+  })
+  .catch(error => {
+    // console.error('Error:', error);
+    $('.toast').css("border-left", "5px solid red");
+    $('.toast').css("color", "red");
+    $('#toast-p').text("Error!");
+    $('#toast-span').text(error);
+
+    $('.toast-cont').fadeIn(500);
+    setTimeout(() => {
+      $('.toast-cont').fadeOut(500);
+      window.location.reload()
+    }, 5000);
+  });
 }
 
 
 getSubmittedTopics();
+console.log(getTerm('get-term'));
 // checkConnection();

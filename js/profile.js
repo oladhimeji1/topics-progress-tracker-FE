@@ -3,6 +3,9 @@ $(document).ready(() => {
   if(!userdata){
     window.location.assign('/')
   }
+
+  var url = 'http://localhost:3000/'
+  var onlineUrl = 'https://topics-progress-tracker-be.onrender.com/'
   
   const pass = generatePass();
   $('#gen-psw').text(`Password: ${pass}`);
@@ -42,7 +45,7 @@ $(document).ready(() => {
     } else {
       
       const arrayOfSubjects = $('#newuser-class').val().split(',').map(subject => subject.trim());
-      const url = 'https://topics-progress-tracker-be.onrender.com/users';
+      const url = url + 'users';
       
       const _data = {
         "id": $('#newuser-id').val(),
@@ -106,7 +109,7 @@ async function getUser(userId){
 async function getAllUsers() {
     try {
       // $('.loader-cont').fadeIn(300);
-      const response = await fetch('https://topics-progress-tracker-be.onrender.com/users');
+      const response = await fetch(url + 'users');
       jsonData = await response.json();
   
       setTimeout(() => {

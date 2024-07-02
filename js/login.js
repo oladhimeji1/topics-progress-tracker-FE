@@ -2,13 +2,16 @@ $(document).ready(() => {
 
     localStorage.clear();
     var username = '', password = '';
+    
+    var url = 'http://localhost:3000/'
+    var onlineUrl = 'https://topics-progress-tracker-be.onrender.com/'
 
     $('#username').blur(() => {
-        username = $('#username').val();
+        username = $('#username').val().trim();
     });
 
     $('#password').blur(() => {
-        password = $('#password').val()
+        password = $('#password').val().trim();
     });
 
     $('#btn').click(() => {
@@ -25,7 +28,7 @@ $(document).ready(() => {
               window.location.reload()
             }, 3000);
         } else {
-            fetch('https://topics-progress-tracker-be.onrender.com/login', {
+            fetch(url + 'login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

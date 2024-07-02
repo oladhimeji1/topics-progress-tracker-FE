@@ -8,6 +8,9 @@ $(document).ready(() => {
     window.location.assign('/')
   }
 });
+var url = 'http://localhost:3000/'
+    var onlineUrl = 'https://topics-progress-tracker-be.onrender.com/'
+
     $('#newcourse-class').change(function() {
         selectedClass = $(this).val();
         // document.getElementById('termSelect').innerHTML = ''
@@ -89,7 +92,7 @@ $('#newuser-btn').on('click', () => {
         chartData: chartData
     };
 
-    fetch('https://topics-progress-tracker-be.onrender.com/update-topics', {
+    fetch(url + 'update-topics', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -200,7 +203,7 @@ $('#newuser-btn').on('click', () => {
 
         if (subject != '') {
 
-            fetch('https://topics-progress-tracker-be.onrender.com/get-topics', {
+            fetch(url + 'get-topics', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -238,7 +241,7 @@ $('#newuser-btn').on('click', () => {
         // console.log('year: ' + year, 'subject: ' + subject, 'term: ' + term, 'level: ' + newChartDataValue, 'Topic: ' + topicToFind);
         var topicIndex = topicToFind;
 
-        fetch('https://topics-progress-tracker-be.onrender.com/update-chartData-index', {
+        fetch(url + 'update-chartData-index', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -275,7 +278,7 @@ function submitTopic(year, subject, term, newChartDataValue, topicToFind){
     var topic = topicToFind;
     var status = "Pending";
 
-    fetch('https://topics-progress-tracker-be.onrender.com/submit-topic', {
+    fetch(url + 'submit-topic', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

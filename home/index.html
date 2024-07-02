@@ -1067,11 +1067,11 @@
                         <div class="flex justify-center self-center gap-3">
                             <input data-tw-merge="" id="" type="text" placeholder="2023 - 2024" class="disabled:bg-slate-100 disabled:cursor-not-allowed disabled:dark:bg-darkmode-800/50 [&[readonly]]:bg-slate-100 [&[readonly]]:cursor-not-allowed [&[readonly]]:dark:bg-darkmode-800/50 transition duration-200 ease-in-out w-full text-sm border-slate-200 shadow-sm rounded-md py-2 px-3 pr-8 focus:ring-4 focus:ring-primary focus:ring-opacity-20 focus:border-primary focus:border-opacity-40 dark:bg-darkmode-800 dark:border-transparent dark:focus:ring-slate-700 dark:focus:ring-opacity-50 group-[.form-inline]:flex-1 mt-2 sm:mr-2">
 
-                            <select data-tw-merge="" aria-label="Default select example" class="disabled:bg-slate-100 disabled:cursor-not-allowed disabled:dark:bg-darkmode-800/50 [&[readonly]]:bg-slate-100 [&[readonly]]:cursor-not-allowed [&[readonly]]:dark:bg-darkmode-800/50 transition duration-200 ease-in-out w-full text-sm border-slate-200 shadow-sm rounded-md py-2 px-3 pr-8 focus:ring-4 focus:ring-primary focus:ring-opacity-20 focus:border-primary focus:border-opacity-40 dark:bg-darkmode-800 dark:border-transparent dark:focus:ring-slate-700 dark:focus:ring-opacity-50 group-[.form-inline]:flex-1 mt-2 sm:mr-2">
+                            <select data-tw-merge="" id="current-term" aria-label="Default select example" class="disabled:bg-slate-100 disabled:cursor-not-allowed disabled:dark:bg-darkmode-800/50 [&[readonly]]:bg-slate-100 [&[readonly]]:cursor-not-allowed [&[readonly]]:dark:bg-darkmode-800/50 transition duration-200 ease-in-out w-full text-sm border-slate-200 shadow-sm rounded-md py-2 px-3 pr-8 focus:ring-4 focus:ring-primary focus:ring-opacity-20 focus:border-primary focus:border-opacity-40 dark:bg-darkmode-800 dark:border-transparent dark:focus:ring-slate-700 dark:focus:ring-opacity-50 group-[.form-inline]:flex-1 mt-2 sm:mr-2">
                                 <option>-- Term --</option>
-                                <option>First</option>
-                                <option>Second</option>
-                                <option>Third</option>
+                                <option value="First Term">First</option>
+                                <option value="Second Term">Second</option>
+                                <option value="Third Term">Third</option>
                             </select>
                         </div>
                     </div>
@@ -1129,8 +1129,8 @@
                                                     <i data-tw-merge="" data-lucide="shopping-cart" class="stroke-1.5 h-[28px] w-[28px] text-primary"></i>
                                                     
                                                 </div>
-                                                <div class="mt-6 text-3xl font-medium leading-8">First</div>
-                                                <div class="mt-1 text-base text-slate-500">Term</div>
+                                                <div id="currentTerm" class="mt-6 text-3xl font-medium leading-8"></div>
+                                                <div class="mt-1 text-base text-slate-500">Current Term</div>
                                             </div>
                                         </div>
                                     </div>
@@ -1311,8 +1311,8 @@
     <!-- Toast -->
     <section class="toast-cont">
         <div class="toast ">
-          <p>Sucess</p>
-          <span>You have succefully submitted the topic</span>
+          <p id="toast-p"></p>
+          <span id="toast-span"></span>
         </div>
     </section>
     
